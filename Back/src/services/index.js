@@ -1,6 +1,6 @@
-const Movie = require("../../model/Movie");
+const Movie = require("../model/Movie");
 
-
+   
 module.exports = {
     mostrarPeliculas: async (req, res) => {
         try {
@@ -12,7 +12,9 @@ module.exports = {
      }
     },
     peliculasRecibidas: async (movieData) => {
-        const nuevaMovie = await Movie.create(movieData);
-        return nuevaMovie;
-    }
+            const nuevaMovie =  await Movie.create(movieData);
+            return nuevaMovie;
+        
+ }
+
 }

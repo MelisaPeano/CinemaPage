@@ -1,9 +1,11 @@
-const { Router } = require("express");
-const { moviesControler } =require("../controller/apiPeliculas");
-
+const {Router} = require("express");
+const movieRouter = require('./movieRouter');
 const router = Router();
 
+router.use('/movies', movieRouter);
 
-app.use("/movies", moviesRuter)
+module.exports = router;
 
-module.exports = router 
+// el enrutador tiene definido un endpoint
+// como tiene la respuesta para lo que se solicita
+// ejecuta el controlador.
