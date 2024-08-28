@@ -7,7 +7,6 @@ module.exports = {
          const nuevaPeli = await Movie.find();  
          return nuevaPeli;
         } catch (error) {
-        console.error(`Error al obtener las películas: ${error.message}`);
         res.status(500).json({ error: "Ocurrió un error al obtener las películas" });
      }
     },
@@ -15,6 +14,5 @@ module.exports = {
             const nuevaMovie =  await Movie.create(movieData);
             return nuevaMovie;
         
- }
-
+     }
 }

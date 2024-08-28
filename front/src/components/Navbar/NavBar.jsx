@@ -11,9 +11,9 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/peliculas">Agregar Peliculas</Nav.Link>
-                        <Nav.Link href="/peliculas">Eliminar Peliculas</Nav.Link>
-                        <Nav.Link href="/peliculas">Modificar Peliculas</Nav.Link>
-                        <Nav.Link href="/peliculas">Sobre Mi</Nav.Link>
+                        <Nav.Link href="/delete">Eliminar Peliculas</Nav.Link>
+                        <Nav.Link href="/update">Modificar Peliculas</Nav.Link>
+                        <Nav.Link href="/sobremi">Sobre Mi</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

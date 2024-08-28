@@ -27,7 +27,7 @@ function ControlledCarousel({ movies }) {
         {movies.map((movie) => (
           <Carousel.Item key={movie._id} className="flex flex-col items-center">
             <img
-              className="d-block w-50 ml-auto mr-auto mt-2 mb-2"
+              className="d-block w-50 ml-auto mr-auto mt-4 mb-2"
               src={movie.poster}
               alt={movie.title}
             />
