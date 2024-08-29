@@ -30,6 +30,8 @@ function ControlledCarousel({ movies }) {
               className="d-block w-50 ml-auto mr-auto mt-4 mb-2"
               src={movie.poster}
               alt={movie.title}
+              style={{ maxHeight: '700px', objectFit: 'cover', maxWidth: '700px' }}
+
             />
             <Carousel.Caption
               style={{
@@ -45,7 +47,9 @@ function ControlledCarousel({ movies }) {
               <h3 style={{ color: isHovered ? 'white' : 'transparent' }}>{movie.title}</h3>
               <p style={{ color: isHovered ? 'white' : 'transparent'  }}>{movie.director}</p>
               <p style={{ color: isHovered ? 'white' : 'transparent'  }}>{movie.year}</p>
-              <p style={{ color: isHovered ? 'white' : 'transparent'  }}>{movie.genre}</p>
+              <p style={{ color: isHovered ? 'white' : 'transparent'  }}>
+                {Array.isArray(movie.genre) ? movie.genre.join(", ") : movie.genre}
+              </p>
               <p style={{ color: isHovered ? 'white' : 'transparent' }}>{movie.duration} mins</p>
               <p style={{ color: isHovered ? 'white' : 'transparent' }}>{movie.rate}/10</p>
             </Carousel.Caption>

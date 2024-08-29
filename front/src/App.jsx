@@ -6,6 +6,7 @@ import FormularioViews from './components/Formulario/FormularioViews';
 import DeleteViews from './components/DeleteMovie/DeleteViews';
 import PutFormViews from './components/PutMovies/PutFormViews';
 import SobreMi from './components/sobremi/SobreMi';
+import FooterViews from './components/Footer/FooterViews';
 
 
 
@@ -25,6 +26,7 @@ function App() {
      <Route path="/update" element={<PutFormViews />} />
      <Route path="/sobremi" element={<SobreMi />} />
     </Routes>
+    <FooterViews/>
     </div>
   )
 }
