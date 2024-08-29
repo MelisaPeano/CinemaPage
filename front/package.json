@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-html && vite build",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "generate-html": "cp index.html dist/"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.7.5",
