@@ -8,7 +8,7 @@
     "build": "npm run generate-html && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-html": "mkdir -p dist && cp index.html dist/"
+    "generate-html": "cp index.html dist/"
   },
   "dependencies": {
     "axios": "^1.7.5",
