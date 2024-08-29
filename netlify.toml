@@ -1,0 +1,26 @@
+# Configuración de Netlify para un proyecto con frontend en React/Vite y backend en Node.js/Express
+
+[build]
+  # Comando para construir el proyecto frontend
+  command = "npm run build"
+  
+  # Directorio donde se encuentran los archivos construidos
+  publish = "front/dist"
+
+# Configuración de funciones (si estás usando funciones de Netlify)
+[functions]
+  # Directorio donde están las funciones de Netlify
+  directory = "backend/functions"
+
+# Reglas de redireccionamiento y reescritura
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
